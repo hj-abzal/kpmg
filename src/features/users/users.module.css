@@ -1,0 +1,44 @@
+.wrapper {
+    width: 100%;
+}
+
+.tableContainer {
+    width: 100%;
+    text-align: center;
+    border-radius: 4px;
+    border-collapse: collapse;
+    box-sizing: border-box;
+    padding: 30px;
+    overflow: hidden;
+}
+
+.tableHeader th {
+    background-color: #ececf9;
+    height: 48px;
+    box-sizing: border-box;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 16px;
+    color: black;
+    text-align: center;
+}
+
+.tableHeader td {
+    padding-right: 15px;
+}
+
+.tableBody {
+    background-color: #ffffff;
+}
+
+.row {
+    height: 48px;
+    box-sizing: border-box;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 16px;
+    color: #000000;
+    text-align: center;
+}

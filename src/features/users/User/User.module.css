@@ -1,0 +1,8 @@
+.borderLine {
+    border-right: 1px solid blue;
+    border-bottom: 1px solid blue;
+}
+
+.dontShow {
+    display: none;
+}
