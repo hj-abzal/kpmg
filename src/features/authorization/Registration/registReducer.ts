@@ -4,7 +4,7 @@ import { Dispatch } from 'redux';
 
 const initialState = {
   registeredUsers: [
-    { id: 1, email: 'kpmg@gmail.com', password: 'admin7777' }
+	{ id: 1, email: 'kpmg@gmail.com', password: 'admin7777' }
   ] as RegisteredUserType[],
 };
 
@@ -13,20 +13,20 @@ export const registrationReducer = (
   action: RegistrationActionTypes
 ): InitialStateType => {
   switch (action.type) {
-    case registrationReducerActions.ADD_REGISTERED_USER:
-      return {
-        ...state,
-        registeredUsers: [...state.registeredUsers, action.payload],
-      };
-    case registrationReducerActions.UPDATE_REGISTERED_USER:
-      return {
-        ...state,
-        registeredUsers: state.registeredUsers.map(u =>
-          u.id === action.payload.id ? { ...u, ...action.payload } : u
-        ),
-      };
-    default:
-      return state;
+	case registrationReducerActions.ADD_REGISTERED_USER:
+		return {
+		...state,
+		registeredUsers: [...state.registeredUsers, action.payload],
+		};
+	case registrationReducerActions.UPDATE_REGISTERED_USER:
+		return {
+		...state,
+		registeredUsers: state.registeredUsers.map(u =>
+			u.id === action.payload.id ? { ...u, ...action.payload } : u
+		),
+		};
+	default:
+		return state;
   }
 };
 
@@ -38,8 +38,8 @@ const registrationReducerActions = {
 
 export const addRegisteredUser = (payload: RegisteredUserType) => {
   return {
-    type: registrationReducerActions.ADD_REGISTERED_USER,
-    payload,
+	type: registrationReducerActions.ADD_REGISTERED_USER,
+	payload,
   } as const;
 };
 
@@ -50,18 +50,18 @@ export const updateRegisteredUser = (
   email: string
 ) => {
   return {
-    type: registrationReducerActions.UPDATE_REGISTERED_USER,
-    payload: { id, firstName, lastName, email },
+	type: registrationReducerActions.UPDATE_REGISTERED_USER,
+	payload: { id, firstName, lastName, email },
   } as const;
 };
 
 //Thunks
 export const addUser =
   (email: string, password: string) =>
-    (dispatch: Dispatch) => {
-      const id = Date.now();
-      dispatch(addRegisteredUser({ id, email, password }));
-    };
+	(dispatch: Dispatch) => {
+		const id = Date.now();
+		dispatch(addRegisteredUser({ id, email, password }));
+	};
 
 //types
 type InitialStateType = typeof initialState;

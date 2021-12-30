@@ -5,12 +5,12 @@ const initialState = {
 
 export const appReducer = (state: InitialStateType = initialState, action: AppActionTypes): InitialStateType => {
   switch (action.type) {
-    case appReducerActions.IS_INITIALIZED:
-      return { ...state, status: action.status };
-    case appReducerActions.SET_VALIDATION:
-      return { ...state, error: action.error };
-    default:
-      return state;
+	case appReducerActions.IS_INITIALIZED:
+		return { ...state, status: action.status };
+	case appReducerActions.SET_VALIDATION:
+		return { ...state, error: action.error };
+	default:
+		return state;
   }
 };
 

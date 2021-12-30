@@ -1,23 +1,20 @@
 {
   "files": {
-    "main.css": "/alem-agro/static/css/main.1587a740.chunk.css",
-    "main.js": "/alem-agro/static/js/main.ca08aec5.chunk.js",
-    "main.js.map": "/alem-agro/static/js/main.ca08aec5.chunk.js.map",
-    "runtime-main.js": "/alem-agro/static/js/runtime-main.bcbab394.js",
-    "runtime-main.js.map": "/alem-agro/static/js/runtime-main.bcbab394.js.map",
-    "static/js/2.c4e6d715.chunk.js": "/alem-agro/static/js/2.c4e6d715.chunk.js",
-    "static/js/2.c4e6d715.chunk.js.map": "/alem-agro/static/js/2.c4e6d715.chunk.js.map",
-    "static/js/3.b1800dfb.chunk.js": "/alem-agro/static/js/3.b1800dfb.chunk.js",
-    "static/js/3.b1800dfb.chunk.js.map": "/alem-agro/static/js/3.b1800dfb.chunk.js.map",
-    "index.html": "/alem-agro/index.html",
-    "static/css/main.1587a740.chunk.css.map": "/alem-agro/static/css/main.1587a740.chunk.css.map",
-    "static/js/2.c4e6d715.chunk.js.LICENSE.txt": "/alem-agro/static/js/2.c4e6d715.chunk.js.LICENSE.txt",
-    "static/media/user.07073b35.png": "/alem-agro/static/media/user.07073b35.png"
+    "main.css": "/kpmg/static/css/main.63453133.chunk.css",
+    "main.js": "/kpmg/static/js/main.e24b9987.chunk.js",
+    "main.js.map": "/kpmg/static/js/main.e24b9987.chunk.js.map",
+    "runtime-main.js": "/kpmg/static/js/runtime-main.eb6076ea.js",
+    "runtime-main.js.map": "/kpmg/static/js/runtime-main.eb6076ea.js.map",
+    "static/js/2.051eddef.chunk.js": "/kpmg/static/js/2.051eddef.chunk.js",
+    "static/js/2.051eddef.chunk.js.map": "/kpmg/static/js/2.051eddef.chunk.js.map",
+    "index.html": "/kpmg/index.html",
+    "static/css/main.63453133.chunk.css.map": "/kpmg/static/css/main.63453133.chunk.css.map",
+    "static/js/2.051eddef.chunk.js.LICENSE.txt": "/kpmg/static/js/2.051eddef.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.bcbab394.js",
-    "static/js/2.c4e6d715.chunk.js",
-    "static/css/main.1587a740.chunk.css",
-    "static/js/main.ca08aec5.chunk.js"
+    "static/js/runtime-main.eb6076ea.js",
+    "static/js/2.051eddef.chunk.js",
+    "static/css/main.63453133.chunk.css",
+    "static/js/main.e24b9987.chunk.js"
   ]
 }

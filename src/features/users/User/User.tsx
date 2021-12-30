@@ -52,7 +52,7 @@ export const User = (props: UserPropsType) => {
 		}
 	};
 	const onDelete = () => {
-		dispatch(deleteUserAC(props.id))
+		dispatch(deleteUserAC(props.id));
 	};
 	const onKeyPressHandler = (e: KeyboardEvent<HTMLInputElement>) => {
 		if (error !== null) {

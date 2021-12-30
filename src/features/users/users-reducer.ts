@@ -155,6 +155,6 @@ export type UsersActionTypes =
 	| ReturnType<typeof getAllUsersAC>
 	| ReturnType<typeof addUserAC>
 	| ReturnType<typeof updateUserAC>
-	| ReturnType<typeof deleteUserAC>
+	| ReturnType<typeof deleteUserAC>;
 
 

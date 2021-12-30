@@ -35,7 +35,7 @@ export type AppThunkType<ReturnType = void> = ThunkAction<
 >;
 declare global {
   interface Window {
-    __REDUX_DEVTOOLS_EXTENSION_COMPOSE__?: typeof compose;
+	__REDUX_DEVTOOLS_EXTENSION_COMPOSE__?: typeof compose;
   }
 }
 

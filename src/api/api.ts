@@ -7,17 +7,17 @@ const instance = axios.create({
 //API
 export const UserAPI = {
   getAllUsers() {
-    return instance.get<UsersResponseType[]>('users');
+	return instance.get<UsersResponseType[]>('users');
   },
   addUser(payload: Omit<UsersResponseType, 'id'>) {
-    return instance.post<UsersResponseType>('users', payload);
+	return instance.post<UsersResponseType>('users', payload);
   },
   updateUser(payload: UsersResponseType) {
-    const id = payload.id;
-    return instance.put<UsersResponseType>(`users/${id}`, payload);
+	const id = payload.id;
+	return instance.put<UsersResponseType>(`users/${id}`, payload);
   },
   deleteUser(id: number) {
-    return instance.delete<UsersResponseType[]>(`users/${id}`);
+	return instance.delete<UsersResponseType[]>(`users/${id}`);
   },
 };
 
@@ -31,20 +31,20 @@ export type UsersResponseType = {
   username: string,
   email: string,
   address: {
-    street: string,
-    suite: string,
-    city: string,
-    zipcode?: number,
-    geo?: {
-      lat: number,
-      lng: number
-    }
+	street: string,
+	suite: string,
+	city: string,
+	zipcode?: number,
+	geo?: {
+		lat: number,
+		lng: number
+	}
   },
   phone: string,
   website: string,
   company: {
-    name: string,
-    catchPhrase: string,
-    bs?: string
+	name: string,
+	catchPhrase: string,
+	bs?: string
   }
 };

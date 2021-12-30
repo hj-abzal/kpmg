@@ -13,17 +13,17 @@ export const Users = () => {
 	const users = useSelector<AppStateType, UsersResponseType[]>(state => state.users);
 	const loggedId = useSelector<AppStateType, number>(state => state.login.loggedId);
 	const history = useHistory();
-	const isAdmin = loggedId === 1
+	const isAdmin = loggedId === 1;
 
 
 	const routeChange = () => {
 		history.push(PATH.ADD_USER);
 	};
 	const data = [
-		{ name: "Anom", age: 19, gender: "Male" },
-		{ name: "Megha", age: 19, gender: "Female" },
-		{ name: "Subham", age: 25, gender: "Male" },
-	]
+		{ name: 'Anom', age: 19, gender: 'Male' },
+		{ name: 'Megha', age: 19, gender: 'Female' },
+		{ name: 'Subham', age: 25, gender: 'Male' },
+	];
 	const titles = [
 		'№',
 		'name',
@@ -34,7 +34,7 @@ export const Users = () => {
 		'street',
 		'suite',
 		'company name',
-	]
+	];
 	const adminList = [
 		'№',
 		'name',
@@ -47,7 +47,7 @@ export const Users = () => {
 		'company name',
 		'edit',
 		'delete'
-	]
+	];
 	return (
 		<div className={s.wrapper}>
 			<IconButton onClick={routeChange} color='primary'>
